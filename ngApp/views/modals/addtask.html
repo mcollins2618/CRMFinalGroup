@@ -1,0 +1,30 @@
+﻿<div class="deal_modal">
+    <div class="modal-header">
+        <h1>New Task</h1>
+    </div>
+    <div class="modal-body">
+        <form class="form-group" ng-submit="vm.addTask(vm.taskToAdd)">
+            <label>Start Date</label>
+            <input type="date" class="form-control full" ng-model="vm.taskToAdd.startDate" />
+            <label>Task Stage</label>
+            <select class="form-control full" ng-model="vm.taskToAdd.status">
+                <option>Not Started</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+            </select>
+            <label>Task Type</label>
+            <select class="form-control full" ng-model="vm.taskToAdd.status">
+                <option>Phoncall</option>
+                <option>Email</option>
+                <option>Meeting / In Person</option>
+            </select>
+            <label>Description</label>
+            <input type="text" class="form-control full" ng-model="vm.taskToAdd.description" />
+            <label>Due Date</label>
+            <input type="date" class="form-control full" ng-model="vm.tasktoAdd.dueDate" />
+            
+            <button class="form-control full btn btn-primary">Add Task</button>
+            <a href="#" ng-click="vm.closeModal()" class="form-control full btn btn-danger">Cancel</a>
+        </form>
+    </div>
+</div>
